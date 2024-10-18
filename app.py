@@ -53,9 +53,9 @@ with tab1:
     st.write("Model Performance")
     mse = 6.214431392352935
     st.write(f"Mean squared error (MSE): {mse:.2f}")
-    gdp = st.number_input("Enter the GDP per capita (dollars):", 150)
-    pov = st.number_input("Enter the Poverty Rate (%):", 30)
-    year1 = st.number_input("Year of prediction:", 2000)
+    gdp = st.number_input("Enter the GDP per capita (dollars):", value=15000)
+    pov = st.number_input("Enter the Poverty Rate (%):", value=30)
+    year1 = st.number_input("Year of prediction:", value=2000)
 
 
     if st.button("Predict"):
